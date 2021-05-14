@@ -13,9 +13,9 @@ main:
   ldr r0,[r0]
   bl phys_to_virt
   ldr r4,=direccionVirtual
-  str r7,[r4]
+  str r0,[r4]
   ldr r0,=msjDirvirtual
-  mov r1,r7
+  ldr r1,[r4]
   bl printf
   
   mov r7,#1
